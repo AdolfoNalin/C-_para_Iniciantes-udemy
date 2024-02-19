@@ -1,0 +1,15 @@
+/home/adolfo/Área de Trabalho/Projetos/Udemy/C#-ParaIniciantes/bin/Debug/net7.0/C#-ParaIniciantes
+/home/adolfo/Área de Trabalho/Projetos/Udemy/C#-ParaIniciantes/bin/Debug/net7.0/C#-ParaIniciantes.deps.json
+/home/adolfo/Área de Trabalho/Projetos/Udemy/C#-ParaIniciantes/bin/Debug/net7.0/C#-ParaIniciantes.runtimeconfig.json
+/home/adolfo/Área de Trabalho/Projetos/Udemy/C#-ParaIniciantes/bin/Debug/net7.0/C#-ParaIniciantes.dll
+/home/adolfo/Área de Trabalho/Projetos/Udemy/C#-ParaIniciantes/bin/Debug/net7.0/C#-ParaIniciantes.pdb
+/home/adolfo/Área de Trabalho/Projetos/Udemy/C#-ParaIniciantes/obj/Debug/net7.0/C#-ParaIniciantes.csproj.AssemblyReference.cache
+/home/adolfo/Área de Trabalho/Projetos/Udemy/C#-ParaIniciantes/obj/Debug/net7.0/C#-ParaIniciantes.GeneratedMSBuildEditorConfig.editorconfig
+/home/adolfo/Área de Trabalho/Projetos/Udemy/C#-ParaIniciantes/obj/Debug/net7.0/C#-ParaIniciantes.AssemblyInfoInputs.cache
+/home/adolfo/Área de Trabalho/Projetos/Udemy/C#-ParaIniciantes/obj/Debug/net7.0/C#-ParaIniciantes.AssemblyInfo.cs
+/home/adolfo/Área de Trabalho/Projetos/Udemy/C#-ParaIniciantes/obj/Debug/net7.0/C#-ParaIniciantes.csproj.CoreCompileInputs.cache
+/home/adolfo/Área de Trabalho/Projetos/Udemy/C#-ParaIniciantes/obj/Debug/net7.0/C#-ParaIniciantes.dll
+/home/adolfo/Área de Trabalho/Projetos/Udemy/C#-ParaIniciantes/obj/Debug/net7.0/refint/C#-ParaIniciantes.dll
+/home/adolfo/Área de Trabalho/Projetos/Udemy/C#-ParaIniciantes/obj/Debug/net7.0/C#-ParaIniciantes.pdb
+/home/adolfo/Área de Trabalho/Projetos/Udemy/C#-ParaIniciantes/obj/Debug/net7.0/C#-ParaIniciantes.genruntimeconfig.cache
+/home/adolfo/Área de Trabalho/Projetos/Udemy/C#-ParaIniciantes/obj/Debug/net7.0/ref/C#-ParaIniciantes.dll
