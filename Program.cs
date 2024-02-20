@@ -10,31 +10,15 @@ namespace C_Para_Iniciantes
     {
         static void Main(String[] angs)
         {
-            // int Armazena valores interios positivois ou negativos
-            // float Armazena valores de ponto flutuante
-            // Double Armazena valores de pronto flutuante
-            // bool True or char
-            // Sting Armazena texto  "Adolfo"
-            // char Armazena Caracteres
+            // Forma Priguiçosa
+            var cor_favorito = "Preto";
+            var modeloDeProduto = 022983934;
 
-            // Criando Variáveis
-            int anoSegundaGerraMundial = 1942;
-            string cor_favorita = "Preto";
-            float velocidadeF1 = 294.48f; 
-            bool SegundaGerraMundialAconteceu = true;
-
-            // Mostrando Variáveis
-            Console.WriteLine(anoSegundaGerraMundial);
-            Console.WriteLine(cor_favorita);
-            Console.WriteLine(velocidadeF1);
-            Console.WriteLine(SegundaGerraMundialAconteceu);
-
-            // Alterando variaveis
-            velocidadeF1 = 348.29f;
-            cor_favorita += "\nAzul";
-
-            Console.WriteLine(velocidadeF1);
-            Console.WriteLine(cor_favorita);
+            // Forma Dinamica, pode mudar o tipo, isso varia do valor que está sendo armazenado
+            dynamic nome = "Adofo nalim";
+            Console.WriteLine(nome);
+            nome = 3000.0f;
+            Console.WriteLine(nome);
         }
     }
 }
