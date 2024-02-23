@@ -11,8 +11,10 @@ namespace C_Para_Iniciantes
     {
         static void Main(String[] angs)
         {
-            // Uma costante é somente para valores fixos
-            const float PI = 3.14f; 
+            Console.WriteLine("Escreva o seu nome");
+            string nome = Console.ReadLine();
+
+            Console.WriteLine("Seu nome é: " + nome);
         }
     }
 }
