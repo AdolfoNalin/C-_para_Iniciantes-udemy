@@ -11,10 +11,11 @@ namespace C_Para_Iniciantes
     {
         static void Main(String[] angs)
         {
-            Console.WriteLine("Escreva o seu nome");
-            string nome = Console.ReadLine();
+            int numeroQualquer = 20 + 20 - 80;
+            int numeroMult = 10 * 90;
+            float numeroDiv = 5.0f / 2;
 
-            Console.WriteLine("Seu nome é: " + nome);
+            int teste = (2 + 2) * 10;
         }
     }
 }
