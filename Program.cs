@@ -11,23 +11,16 @@ namespace C_Para_Iniciantes
 {
     class Program
     {
-
-        public void PrecoFinal(string nome, decimal valorInicial)
+        public double Raio(double raio)
         {
-            decimal valorFinal = valorInicial;
-            valorFinal += (25 * valorInicial) / 100;
-            
-            Console.WriteLine($"{nome} Valor R${valorFinal}");
+            double cf = (raio * raio) * Math.PI;
+            return cf;
         }
 
         static void Main(String[] angs)
         {
-            Program program = new Program();
-            program.PrecoFinal("Chocolate", 30);
-            program.PrecoFinal("Refrigerante", 50);
-            program.PrecoFinal("Bolo", 45);
-            program.PrecoFinal("Sorvete", 60);
-            program.PrecoFinal("Pão", 15);
+            Program pg = new Program();
+            Console.WriteLine(pg.Raio(30));
         }
     }
 }
