@@ -13,33 +13,30 @@ namespace C_Para_Iniciantes
     {
         static void Main(String[] angs)
         {
-            GerarPreco(-10);
-            int result = Soma(100,200,330);
+            Console.WriteLine("Insira 3 numeros para saber qual é o maior ou se são iguais");
+            double num1 = Double.Parse(Console.ReadLine());
+            double num2 = Double.Parse(Console.ReadLine());
+            double num3 = Double.Parse(Console.ReadLine());
 
-            Console.WriteLine(result);
-        }
-
-        static void ExibirMSG()
-        {
-            Console.WriteLine("Esse sistema é Show de bola");
-            Console.WriteLine("Estou usando funções");
-        }
-
-        static void GerarPreco(decimal valor)
-        {
-           if (valor < 0)
-           {
-                valor = Math.Abs(valor);
-           }
-
-           decimal valorFinal = valor + (2 * valor);
-           Console.WriteLine("Valor final: " + valor);
-        }
-
-        static int Soma(int a, int b, int c)
-        {
-            int result = a + b + c;
-            return result;
+            if(num1 < num2)
+            {
+                if(num1 < num3)
+                {
+                    Console.WriteLine("O maior número é: " + num1);
+                }
+            }
+            else if(num2 < num3)
+            {
+                Console.WriteLine("O maior número é: " + num2);
+            }
+            else if (num3 < num1)
+            {
+                Console.WriteLine("O maior número é: " + num3);
+            }
+            else
+            {
+                Console.WriteLine("São todos iguais");
+            }
         }
     }
 }
