@@ -14,28 +14,20 @@ namespace C_Para_Iniciantes
     {
         static void Main(String[] angs)
         {
-            Console.WriteLine("Qual é a sua nessecidade?");
-            int urgencia = int.Parse(Console.ReadLine());
-
-            if(urgencia >= 0)
+            string[] produtos = new string[5]
             {
-                if(urgencia <= 3)
-                {
-                    Console.WriteLine("Baixa");
-                }
-                else if(urgencia <= 6)
-                {
-                    Console.WriteLine("Médio");
-                }
-                else if(urgencia <= 9)
-                {
-                    Console.WriteLine("Alto");
-                }
-                else
-                {
-                    Console.WriteLine("Grave");
-                }
-            }
+                "Sea of thiseves",
+                "FIFA",
+                "Minecraft",
+                "Half-Life",
+                "Portal"
+            };
+
+            Console.WriteLine(produtos[1]);
+
+            int[] valore = {40,50,60,70,20};
+
+            Console.WriteLine(valore[4]);
         }
     }
 }
