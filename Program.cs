@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Common;
+using System.Diagnostics;
 using System.Linq;
 using System.Reflection.Metadata;
 using System.Text;
@@ -14,20 +15,26 @@ namespace C_Para_Iniciantes
     {
         static void Main(String[] angs)
         {
-            string[] produtos = new string[5]
+            string cor = "Azul";
+            
+            switch (cor)
             {
-                "Sea of thiseves",
-                "FIFA",
-                "Minecraft",
-                "Half-Life",
-                "Portal"
-            };
-
-            Console.WriteLine(produtos[1]);
-
-            int[] valore = {40,50,60,70,20};
-
-            Console.WriteLine(valore[4]);
+                case "VErmelhor":
+                    Console.WriteLine("Sua cor favorita é vermelhor");
+                    break;
+                case "Amarelo":
+                    Console.WriteLine("Sua cor favorita é Amarela");
+                    break;
+                case "Azul":
+                    Console.WriteLine("Sua cor favorita é Azul");
+                    break;
+                case "Rosa":
+                    Console.WriteLine("Sua cor favorita é Rosa");
+                    break;
+                default: 
+                    Console.WriteLine("Essa cor não é valida");
+                    break;
+            }
         }
     }
 }
