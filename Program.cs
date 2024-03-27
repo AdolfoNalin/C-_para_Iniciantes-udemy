@@ -11,18 +11,24 @@ namespace C_Para_Iniciantes
 {
     class Program
     {
-        public double AreaTriangulo(double lado1, double lado2)
-        {
-            double result = lado1 * lado2;
-            double area = result / 2;
-            return area;
-        }
-
         static void Main(String[] angs)
         {
-            Program pg = new Program();
-            double area = pg.AreaTriangulo(250,350);
-            Console.WriteLine(area); 
+            int a = 10;
+            int b = 20;
+            int c = 200;
+
+            if (a < b || a > c)
+            {
+                Console.WriteLine("É verdadeiro");
+            }
+            else if(a > c)
+            {
+                Console.WriteLine("Executou o Else if");
+            }
+            else
+            {
+                Console.WriteLine("É Mentira!");
+            }
         }
     }
 }
