@@ -11,30 +11,15 @@ using C_Para_Iniciantes;
 
 namespace C_Para_Iniciantes
 {
+    enum cor {Azul, Verde, Amarelo = 33, Vermelho = 1000}
     class Program
     {
         static void Main(String[] angs)
         {
-            string cor = "Azul";
-            
-            switch (cor)
-            {
-                case "VErmelhor":
-                    Console.WriteLine("Sua cor favorita é vermelhor");
-                    break;
-                case "Amarelo":
-                    Console.WriteLine("Sua cor favorita é Amarela");
-                    break;
-                case "Azul":
-                    Console.WriteLine("Sua cor favorita é Azul");
-                    break;
-                case "Rosa":
-                    Console.WriteLine("Sua cor favorita é Rosa");
-                    break;
-                default: 
-                    Console.WriteLine("Essa cor não é valida");
-                    break;
-            }
+            cor corFavorita = cor.Verde;
+            Console.WriteLine(corFavorita);
+            Console.WriteLine((int)corFavorita);
+            Console.WriteLine((cor) 1000);
         }
     }
 }
