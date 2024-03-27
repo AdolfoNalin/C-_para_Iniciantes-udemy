@@ -11,16 +11,18 @@ namespace C_Para_Iniciantes
 {
     class Program
     {
-        public double Raio(double raio)
+        public double AreaTriangulo(double lado1, double lado2)
         {
-            double cf = (raio * raio) * Math.PI;
-            return cf;
+            double result = lado1 * lado2;
+            double area = result / 2;
+            return area;
         }
 
         static void Main(String[] angs)
         {
             Program pg = new Program();
-            Console.WriteLine(pg.Raio(30));
+            double area = pg.AreaTriangulo(250,350);
+            Console.WriteLine(area); 
         }
     }
 }
