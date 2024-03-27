@@ -11,24 +11,31 @@ namespace C_Para_Iniciantes
 {
     class Program
     {
+
+       
+
         static void Main(String[] angs)
         {
-            int a = 10;
-            int b = 20;
-            int c = 200;
+            Console.WriteLine("Por favor digite a sua idade!");
+            int idade = int.Parse(Console.ReadLine());
 
-            if (a < b || a > c)
+        
+            if(idade > 0 && idade <= 10)
             {
-                Console.WriteLine("É verdadeiro");
+                Console.WriteLine("Você é uma criança");
             }
-            else if(a > c)
+            else if(idade > 10 && idade < 18)
             {
-                Console.WriteLine("Executou o Else if");
+                Console.WriteLine("Você é um adolecente");
             }
-            else
+            else if (idade >= 18 && idade < 60)
             {
-                Console.WriteLine("É Mentira!");
+                Console.WriteLine("você é um adulto");
             }
+            else{
+                Console.WriteLine("Você é um idoso");
+            }
+        
         }
     }
 }
