@@ -14,13 +14,15 @@ namespace C_Para_Iniciantes
         static void Main(String[] angs)
         {
             GerarPreco(-10);
+            int result = Soma(100,200,330);
+
+            Console.WriteLine(result);
         }
 
         static void ExibirMSG()
         {
             Console.WriteLine("Esse sistema é Show de bola");
             Console.WriteLine("Estou usando funções");
-            Console.WriteLine("Bem vindo");
         }
 
         static void GerarPreco(decimal valor)
@@ -31,7 +33,13 @@ namespace C_Para_Iniciantes
            }
 
            decimal valorFinal = valor + (2 * valor);
-           Console.WriteLine("O valor final: " + valorFinal);
+           Console.WriteLine("Valor final: " + valor);
+        }
+
+        static int Soma(int a, int b, int c)
+        {
+            int result = a + b + c;
+            return result;
         }
     }
 }
