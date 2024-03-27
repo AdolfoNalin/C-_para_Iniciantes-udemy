@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.Common;
 using System.Linq;
 using System.Reflection.Metadata;
 using System.Text;
@@ -13,29 +14,27 @@ namespace C_Para_Iniciantes
     {
         static void Main(String[] angs)
         {
-            Console.WriteLine("Insira 3 numeros para saber qual é o maior ou se são iguais");
-            double num1 = Double.Parse(Console.ReadLine());
-            double num2 = Double.Parse(Console.ReadLine());
-            double num3 = Double.Parse(Console.ReadLine());
+            Console.WriteLine("Qual é a sua nessecidade?");
+            int urgencia = int.Parse(Console.ReadLine());
 
-            if(num1 > num2)
+            if(urgencia >= 0)
             {
-                if(num1 > num3)
+                if(urgencia <= 3)
                 {
-                    Console.WriteLine("O maior número é: " + num1);
+                    Console.WriteLine("Baixa");
                 }
-            }
-            else if(num2 > num3)
-            {
-                Console.WriteLine("O maior número é: " + num2);
-            }
-            else if (num3 > num1)
-            {
-                Console.WriteLine("O maior número é: " + num3);
-            }
-            else
-            {
-                Console.WriteLine("São todos iguais");
+                else if(urgencia <= 6)
+                {
+                    Console.WriteLine("Médio");
+                }
+                else if(urgencia <= 9)
+                {
+                    Console.WriteLine("Alto");
+                }
+                else
+                {
+                    Console.WriteLine("Grave");
+                }
             }
         }
     }
