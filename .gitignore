@@ -1,4 +1,2 @@
 # C-_para_Iniciantes-udemy
-*.csproj
-*.dll
-*.pdb
+.bin/
