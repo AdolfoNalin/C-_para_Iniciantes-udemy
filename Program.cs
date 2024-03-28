@@ -17,9 +17,14 @@ namespace C_Para_Iniciantes
         {
             string[] palavras = {"Vitor Lima", "Lima", "Guia do prog", "Formação", "Node", "Curso de C#", "Udemy!"};
 
-            foreach (string palavra in palavras)
+            for (int i = 0; i < palavras.Length; i++)
             {
-                Console.WriteLine(palavra);
+                Console.WriteLine(palavras[i]);
+            }
+
+            for(int i = palavras.Length - 1; i >= 0; i--)
+            {
+                Console.WriteLine(palavras[i]);
             }
         } 
     }
