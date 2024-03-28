@@ -11,15 +11,38 @@ using C_Para_Iniciantes;
 
 namespace C_Para_Iniciantes
 {
-    enum cor {Azul, Verde, Amarelo = 33, Vermelho = 1000}
     class Program
     {
+        enum Opcao {Criar = 1, Deletar, Editar, Listar, Atualizar};
         static void Main(String[] angs)
         {
-            cor corFavorita = cor.Verde;
-            Console.WriteLine(corFavorita);
-            Console.WriteLine((int)corFavorita);
-            Console.WriteLine((cor) 1000);
-        }
+            Console.WriteLine("Selecione uma das Opções abaixo:");
+            Console.WriteLine("1-Criar\n2-Deletar\n3-Editar\n4-Listrar\n5-Atualizar");
+            int index = int.Parse(Console.ReadLine());
+
+            Opcao selectOp = (Opcao) index;
+
+            switch(selectOp)
+            {
+                case Opcao.Criar:
+                    Console.WriteLine();
+                    break;
+                case Opcao.Deletar:
+                    Console.WriteLine();
+                    break;
+                case Opcao.Editar:
+                    Console.WriteLine();
+                    break;
+                case Opcao.Listar:
+                    Console.WriteLine();
+                    break;
+                case Opcao.Atualizar:
+                    Console.WriteLine();
+                    break;
+                default:
+                    Console.WriteLine("Essa opção não existe! verifique o menu novamente!");
+                    break;
+            }
+        } 
     }
 }
