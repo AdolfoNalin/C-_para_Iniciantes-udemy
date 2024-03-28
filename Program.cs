@@ -13,18 +13,17 @@ namespace C_Para_Iniciantes
 {
     class Program
     {
+        static string MensagemBoasVindas(string nome)
+        {
+            return $"Seja bem-vindo {nome} a nossa escola!";
+        }
         static void Main(String[] angs)
         {
-            string[] palavras = {"Vitor Lima", "Lima", "Guia do prog", "Formação", "Node", "Curso de C#", "Udemy!"};
+            string[] alunos = {"Giovana", "Jessica", "Rafaela", "Julia", "Ana Claudia", "Claudia", "Marine", "Sophia", "Ana Julia"};
 
-            for (int i = 0; i < palavras.Length; i++)
+            for(int i = 0; i < alunos.Length; i++)
             {
-                Console.WriteLine(palavras[i]);
-            }
-
-            for(int i = palavras.Length - 1; i >= 0; i--)
-            {
-                Console.WriteLine(palavras[i]);
+                Console.WriteLine(MensagemBoasVindas(alunos[i]));
             }
         } 
     }
