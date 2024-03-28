@@ -16,11 +16,13 @@ namespace C_Para_Iniciantes
         static void Main(String[] angs)
         {
             int contador = 0;
-            while (contador < 10)
+            do
             {
-                Console.WriteLine("Rodando o While");
+                Console.WriteLine(contador);
                 contador++;
             }
+            while (contador < 3);
+            
         } 
     }
 }
