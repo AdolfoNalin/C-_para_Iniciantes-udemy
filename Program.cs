@@ -15,14 +15,14 @@ namespace C_Para_Iniciantes
     {
         static void Main(String[] angs)
         {
-            int contador = 0;
-            while(contador <= 200)
-            {
-                Console.WriteLine($"{contador}KM /hora");
-                contador++;
-            }
+            int time = 7;
 
-            Console.WriteLine("você chegou no limite");
+            while(time >= 7 && time <= 17)
+            {
+                Console.WriteLine($"São {time} e o mercado está aberto!.");
+                time++;
+            }
+            Console.WriteLine("Infelzimente nosso horário de funcionamento é das 7hrs até 17hrs");
         } 
     }
 }
