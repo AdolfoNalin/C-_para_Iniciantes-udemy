@@ -15,14 +15,12 @@ namespace C_Para_Iniciantes
     {
         static void Main(String[] angs)
         {
-            int contador = 0;
-            do
+            string[] palavras = {"Vitor Lima", "Lima", "Guia do prog", "Formação", "Node", "Curso de C#", "Udemy!"};
+
+            foreach (string palavra in palavras)
             {
-                Console.WriteLine(contador);
-                contador++;
+                Console.WriteLine(palavra);
             }
-            while (contador < 3);
-            
         } 
     }
 }
