@@ -13,16 +13,29 @@ namespace C_Para_Iniciantes
 {
     class Program
     {
+
+        static void MostrarSaborPizza(string[] pizzas)
+        {
+            foreach (string pizza in pizzas)
+            {
+                Console.WriteLine($"Temos sabor: {pizza} | Aproveite a refeição");
+            }
+        }
         static void Main(String[] angs)
         {
-            int time = 7;
+           string[] pizzas = {
+            "Portuguêsa",
+            "Bauru", 
+            "Frango com Catupiry", 
+            "4 Queijos",
+            "Picanha",
+            "Sensação",
+            "Calabresa",
+            "Atile",
+            "Peperoni",
+            "Atum"};
 
-            while(time >= 7 && time <= 17)
-            {
-                Console.WriteLine($"São {time} e o mercado está aberto!.");
-                time++;
-            }
-            Console.WriteLine("Infelzimente nosso horário de funcionamento é das 7hrs até 17hrs");
+            MostrarSaborPizza(pizzas);
         } 
     }
 }
