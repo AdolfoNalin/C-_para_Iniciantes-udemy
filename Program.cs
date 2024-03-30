@@ -14,28 +14,24 @@ namespace C_Para_Iniciantes
     class Program
     {
 
-        static void MostrarSaborPizza(string[] pizzas)
-        {
-            foreach (string pizza in pizzas)
-            {
-                Console.WriteLine($"Temos sabor: {pizza} | Aproveite a refeição");
-            }
-        }
+        
         static void Main(String[] angs)
         {
-           string[] pizzas = {
-            "Portuguêsa",
-            "Bauru", 
-            "Frango com Catupiry", 
-            "4 Queijos",
-            "Picanha",
-            "Sensação",
-            "Calabresa",
-            "Atile",
-            "Peperoni",
-            "Atum"};
+          int contador = 1000;
 
-            MostrarSaborPizza(pizzas);
+          for(int i = contador; i >= 0; --i)
+          {
+            if(i > 10)
+            {
+                Console.WriteLine($"Contador está: {i}");
+            }
+            else
+            {
+                Console.WriteLine($"{i}");
+            }
+          }
+
+          Console.WriteLine("---------LANÇADO---------");
         } 
     }
 }
