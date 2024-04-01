@@ -146,8 +146,9 @@ namespace C_Para_Iniciantes
             case menu.Sair:
               sair = true;
               break;
-              default:
+            default:
               opcao = (menu) Menu();
+              break;
           }
         }
       
