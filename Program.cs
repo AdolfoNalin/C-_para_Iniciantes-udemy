@@ -28,13 +28,27 @@ namespace C_Para_Iniciantes
         this.Peso = peso;
         this.Marca = marca;
       }
+
+      public float AddCupon(float porc)
+      {
+         float desconto = this.Preco * porc / 100f;
+         return this.Preco - desconto;
+      }
+
+      public void ExibirInfo()
+      {
+        Console.WriteLine($"Nome: {this.Nome} \nPreço: R${this.Preco} \nPeso: {this.Peso} \nMarca: {this.Marca}");
+      } 
     }
 
     static void Main(String[] angs)
     {
       Produto bola = new Produto("Celular", 1500.00f, 0.700f, "Iphone");
 
-      Console.WriteLine(bola.Nome);
+      bola.ExibirInfo();
+      float valorFinal = bola.AddCupon(50f);
+
+      Console.WriteLine($"Preço Final: R${valorFinal}");
     }
   }
 }
