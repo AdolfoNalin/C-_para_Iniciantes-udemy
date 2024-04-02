@@ -18,11 +18,29 @@ namespace C_Para_Iniciantes
       List<string> clientes = new List<string>();
 
       clientes.Add("Adolfo");
+      clientes.Add("Renam");
+      clientes.Add("Otávio");
+      clientes.Add("Adolfo Nalin Junior");
+      clientes.Add("Josemar");
+      clientes.Add("Rafaela");
+      clientes.Add("Ana júlia");
 
-      string nome = "Cleiton";
-      clientes.Add(nome);
 
-      Console.WriteLine(clientes[0]);
+      foreach(string cliente in clientes)
+      {
+        Console.WriteLine(cliente);
+      }
+      
+      Console.WriteLine("==========================================");
+      clientes.RemoveAt(1); //Remove pelo indix
+      clientes.RemoveAll((cliente) => cliente == "Adolfo"); //Remove pelo nome
+      clientes.Remove("Otávio"); // Remove o nome
+      clientes.RemoveRange(1,3); //Remove de um ponto a outro
+
+      foreach(string cliente in clientes)
+      {
+        Console.WriteLine(cliente);
+      }
     }
   }
 }
