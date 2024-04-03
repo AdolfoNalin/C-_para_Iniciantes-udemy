@@ -26,21 +26,24 @@ namespace C_Para_Iniciantes
       clientes.Add("Ana júlia");
 
 
-      foreach(string cliente in clientes)
-      {
-        Console.WriteLine(cliente);
-      }
+      // foreach(string cliente in clientes)
+      // {
+      //   Console.WriteLine(cliente);
+      // }
       
-      Console.WriteLine("==========================================");
-      clientes.RemoveAt(1); //Remove pelo indix
-      clientes.RemoveAll((cliente) => cliente == "Adolfo"); //Remove pelo nome
-      clientes.Remove("Otávio"); // Remove o nome
-      clientes.RemoveRange(1,3); //Remove de um ponto a outro
+      string FindBuscar = clientes.Find(cliente => cliente == "Josemar");
+      string FindMais10 = clientes.Find(cliente => cliente.Length > 10); // Retorna o primeiro resultado
+      List<string> FindAllMais5 = clientes.FindAll(cliente => cliente.Length > 5); // Retorna o primeiro resultado
 
-      foreach(string cliente in clientes)
+      Console.WriteLine(FindBuscar);
+      Console.WriteLine(FindMais10);
+
+      Console.WriteLine("==========================================================");
+
+      foreach (string item in FindAllMais5)
       {
-        Console.WriteLine(cliente);
-      }
+        Console.WriteLine(item);
+      }      
     }
   }
 }
