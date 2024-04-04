@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using C_Para_Iniciantes;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
+using System.Reflection;
 
 namespace C_Para_Iniciantes
 {
@@ -20,48 +21,38 @@ namespace C_Para_Iniciantes
     {
       public string nome;
       public float preco;
-    }
+    }    
 
     static void Main(String[] angs)
     {
-      FileStream fs = new  FileStream("meuarquivo.pdf", FileMode.OpenOrCreate);
+      List<string> lg = new List<string>();
+      lg.Add("C#");
+      lg.Add("Javascript");
+      lg.Add("PHP");
+
+      Produtos prod = new Produtos();
+      prod.nome = "banana";
+      prod.preco = 2.40f;
+      FileStream fs = new FileStream("meuarquivo.pdf",FileMode.OpenOrCreate);
       BinaryFormatter encoder = new BinaryFormatter();
 
-//       int i = 120;
-// #pragma warning disable SYSLIB0011 // O tipo ou membro é obsoleto
-//             encoder.Serialize(fs, i);
-//             encoder.Serialize(fs, "Adolfo");
-//             encoder.Serialize(fs, true);
-// #pragma warning restore SYSLIB0011 // O tipo ou membro é obsoleto
+/*
+#pragma warning disable SYSLIB0011 // O tipo ou membro é obsoleto
+      encoder.Serialize(fs, lg);
+      encoder.Serialize(fs, prod);
+#pragma warning restore SYSLIB0011
+*/
 
-//           fs.Close();
+#pragma warning disable SYSLIB0011
+      List<string> read = (List<string>)encoder.Deserialize(fs);
+      Produtos pd = (Produtos)encoder.Deserialize(fs);
+#pragma warning restore SYSLIB0011 // O tipo ou membro é obsoleto
 
-//           Console.WriteLine("Arquivo foi salvo");
+        fs.Close();
 
-//       List<string> lg = new List<string>();
+        Console.WriteLine(read[0]);
+        Console.WriteLine(pd.nome);
 
-//       lg.Add("C#");
-//       lg.Add("Java");
-//       lg.Add("Javascript");
-//       lg.Add("HTMl");
-
-// #pragma warning disable SYSLIB0011 // O tipo ou membro é obsoleto
-//             encoder.Serialize(fs, lg);
-// #pragma warning restore SYSLIB0011 // O tipo ou membro é obsoleto
-
-
-      Produtos banana = new Produtos();
-      banana.nome = "Banana";
-      banana.preco = 2.50f;
-
-      Produtos maca = new Produtos();
-      maca.nome = "maça";
-      maca.preco = 3.20f;
-    
-      #pragma warning disable SYSLIB0011
-      encoder.Serialize(fs, banana);
-      #pragma warning restore SYSLIB0011
-      Console.WriteLine(" O arquivo foi salvo!");
     }
   }
 }
