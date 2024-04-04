@@ -9,76 +9,59 @@ using System.Text;
 using System.Threading.Tasks;
 using C_Para_Iniciantes;
 using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 
 namespace C_Para_Iniciantes
 {
   class Program 
   {
+    [Serializable]
+    struct Produtos
+    {
+      public string nome;
+      public float preco;
+    }
+
     static void Main(String[] angs)
     {
-      /*StreamWriter escritor = new StreamWriter("teste.txt"); => Para ecrever arquivos novos
-      StreamWriter escritor = File.AppendText("teste.txt"); => Para editar arquivos que já existe e manter os dados
-      
-      escritor.WriteLine("Udemy");
-      escritor.Close();
-      */
+      FileStream fs = new  FileStream("meuarquivo.pdf", FileMode.OpenOrCreate);
+      BinaryFormatter encoder = new BinaryFormatter();
 
-      StreamReader sr = new StreamReader("teste.txt");
-      // string cont = sr.ReadToEnd(); // Conteudo do arquivo todo em uma string
+//       int i = 120;
+// #pragma warning disable SYSLIB0011 // O tipo ou membro é obsoleto
+//             encoder.Serialize(fs, i);
+//             encoder.Serialize(fs, "Adolfo");
+//             encoder.Serialize(fs, true);
+// #pragma warning restore SYSLIB0011 // O tipo ou membro é obsoleto
 
-      // Console.WriteLine(cont);
+//           fs.Close();
 
-      /* Lendo linha por linha de um documento texto
-      string line = "";
-      while(line != null)
-      {
-        line = sr.ReadLine();
-        if(line != null)
-        {
-          Console.WriteLine(line);
-        }
-      }
-      sr.Close();*/
+//           Console.WriteLine("Arquivo foi salvo");
 
-      /* Passando os valor de um documento texto para uma array
-      Console.WriteLine("------------------------------------------------");
-      string textLine = "";
-      List<string> lines = new List<string>();
-      while(textLine != null)
-      {
-        textLine = sr.ReadLine();
-        if(textLine != null)
-        {
-          lines.Add(textLine);
-        }
-      }
+//       List<string> lg = new List<string>();
 
-      sr.Close();
+//       lg.Add("C#");
+//       lg.Add("Java");
+//       lg.Add("Javascript");
+//       lg.Add("HTMl");
 
-      
-      foreach(string linha in lines)
-      {
-        Console.WriteLine(linha);
-      }*/
+// #pragma warning disable SYSLIB0011 // O tipo ou membro é obsoleto
+//             encoder.Serialize(fs, lg);
+// #pragma warning restore SYSLIB0011 // O tipo ou membro é obsoleto
 
-      // Tentando criar um outro tipo de leitura
-      // foreach (char script in sr.ReadLine())
-      // {
-      //   string linha = "";
-      //   linha = script;
 
-      //   if(linha != null)
-      //   {
-      //     Console.WriteLine(script);
-      //   }
-      //   else if(linha.Count() + 1 == null)
-      //   {
-      //     sr.Close();
-      //     break;
-      //   }
-      // }
+      Produtos banana = new Produtos();
+      banana.nome = "Banana";
+      banana.preco = 2.50f;
 
-      Console.WriteLine("Arquivo salvo e criado");
+      Produtos maca = new Produtos();
+      maca.nome = "maça";
+      maca.preco = 3.20f;
+    
+      #pragma warning disable SYSLIB0011
+      encoder.Serialize(fs, banana);
+      #pragma warning restore SYSLIB0011
+      Console.WriteLine(" O arquivo foi salvo!");
     }
   }
 }
