@@ -19,13 +19,13 @@ namespace C_Para_Iniciantes
 {
   class Program 
   {
-    static void Main(String[] angs)
+    static void Main (String[] angs)
     {
-      Filme MMF = new Filme();
+      // Os elementos static podem ser acessados direto da classe como:
+      Filme.Pausar();
 
-      MMF.nome = "Meu Malvado Favorito";
-
-      MMF.Executar();
+      // Porém não tem como usar a um método ou atributo static de um objeto
+      
     }
   }
 }

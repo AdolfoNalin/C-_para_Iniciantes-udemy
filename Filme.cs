@@ -19,7 +19,7 @@ namespace C__ParaIniciantes
             Console.WriteLine("Rodando o filme: " + this.nome);
         }
 
-        public void Pausar()
+        static public void Pausar()
         {
             Console.WriteLine("||");
         }
