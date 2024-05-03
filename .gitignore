@@ -1,2 +1,7 @@
 # C-_para_Iniciantes-udemy
-.bin/
+*bin
+*obj
+*.sln
+*.csproj
+
+.fake

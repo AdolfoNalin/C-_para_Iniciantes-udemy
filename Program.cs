@@ -1,31 +1,12 @@
-﻿
-using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Data.Common;
-using System.Diagnostics;
-using System.Linq;
-using System.Reflection.Metadata;
-using System.Text;
-using System.Threading.Tasks;
-using C_Para_Iniciantes;
-using System.IO;
-using System.Runtime.Serialization.Formatters.Binary;
-using System.Reflection;
-using System.Security.Cryptography;
-using C__ParaIniciantes;
+﻿using C__ParaIniciantes;
 
-namespace C_Para_Iniciantes
-{
-  class Program 
-  {
-    static void Main (String[] angs)
-    {
-      // Os elementos static podem ser acessados direto da classe como:
-      Filme.Pausar();
+Filme filme = new Filme(1, "Meu malvado favorito", "Um vilao legal", 2012, "HBO max");
+Filme f = filme;
+Console.WriteLine(filme.nome);
+Console.WriteLine(f.nome);
 
-      // Porém não tem como usar a um método ou atributo static de um objeto
-      
-    }
-  }
-}
+f.SetAtor("Adolfo");
+f.SetAtor("bred pitt");
+f.SetAtor("uva");
+
+f.GetAtores();

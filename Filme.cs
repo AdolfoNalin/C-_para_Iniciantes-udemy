@@ -12,7 +12,17 @@ namespace C__ParaIniciantes
         public string descricao;
         public int ano;
         public string studio;
-        public List<string> atores = new List<string>();
+        private List<string> atores = new List<string>();
+
+        public Filme(int id, string nome, string descricao, int ano,string studio)
+        {
+            this.Id = id;
+            this.nome = nome;
+            this.descricao = descricao;
+            this.ano = ano;
+            this.studio = studio;
+            this.atores = atores;
+        }
 
         public void Executar()
         {
@@ -22,6 +32,25 @@ namespace C__ParaIniciantes
         static public void Pausar()
         {
             Console.WriteLine("||");
+        }
+
+        public void SetAtor(string nome)
+        {
+            if(nome != null && nome != String.Empty){
+                
+                if(nome.Length > 4)
+                {
+                    atores.Add(nome);
+                }
+            }
+        }
+
+        public void GetAtores()
+        {
+            foreach(string ator in atores)
+            {
+                Console.WriteLine(ator);
+            }
         }
     }
 }
