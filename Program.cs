@@ -1,12 +1,19 @@
 ﻿using C__ParaIniciantes;
+using C_para_Iniciantesudemy.Objects.Heranças;
 
-Filme filme = new Filme(1, "Meu malvado favorito", "Um vilao legal", 2012, "HBO max");
-Filme f = filme;
-Console.WriteLine(filme.nome);
-Console.WriteLine(f.nome);
+Aluno aluno = new Aluno();
 
-f.SetAtor("Adolfo");
-f.SetAtor("bred pitt");
-f.SetAtor("uva");
+aluno.name = "Adolfo";
+aluno.email = "adolfonalin@hotmail.com";
+aluno.password = "12345";
+aluno.Login(aluno.name, aluno.password);
+aluno.GetInformation();
 
-f.GetAtores();
+Zelador zelador= new Zelador();
+
+zelador.name = "Cleiton";
+zelador.email = "cleitonnalin@hotmail.com";
+zelador.password = "12345";
+
+zelador.Login(zelador.name, zelador.password);
+zelador.GetInformation();
