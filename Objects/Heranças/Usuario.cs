@@ -10,6 +10,7 @@ namespace C_para_Iniciantesudemy.Objects.Heranças
         public string name;
         public string email;
         public string password;
+        protected string teste;
 
         public void Login(string nome, string senha)
         {

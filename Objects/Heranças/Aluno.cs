@@ -9,5 +9,9 @@ namespace C_para_Iniciantesudemy.Objects.Heranças
     {
         string turno;
 
+        public String MudTeste(){
+            return teste;
+        }
+        
     }
 }
