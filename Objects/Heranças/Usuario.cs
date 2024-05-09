@@ -7,10 +7,17 @@ namespace C_para_Iniciantesudemy.Objects.Heranças
 {
     public class Usuario
     {
-        public string name;
-        public string email;
-        public string password;
+        protected string name;
+        protected string email;
+        protected string password;
         protected string teste;
+
+        public Usuario(string nome, string email, string password)
+        {
+            name = nome;
+            this.email = email;
+            this.password = password;
+        }
 
         public void Login(string nome, string senha)
         {

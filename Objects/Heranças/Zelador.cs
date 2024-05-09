@@ -9,5 +9,10 @@ namespace C_para_Iniciantesudemy.Objects.Heranças
     public class Zelador : Usuario
     {
         List<string> task = new List<string>();
+
+        public Zelador(string nome, string email, string password) : base(nome, email, password)   
+        {
+            
+        }
     }
 }

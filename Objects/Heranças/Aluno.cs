@@ -9,6 +9,11 @@ namespace C_para_Iniciantesudemy.Objects.Heranças
     {
         string turno;
 
+        public Aluno(string turno, string nome, string email, string password) : base(nome, email, password)
+        {
+            this.turno = turno;
+        }
+
         public String MudTeste(){
             return teste;
         }
