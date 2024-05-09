@@ -1,9 +1,10 @@
 ﻿using C__ParaIniciantes;
 using C_para_Iniciantesudemy.Objects.Heranças;
 
-Aluno aluno = new Aluno("Adolfo", "adolfonalin@gmail.com", "12345", "Noturno");
+Aluno aluno = new Aluno("Noturno", "Adolfo", "adolfonalin@gmail.com", "12345");
 
 Zelador zelador= new Zelador("Cleiton", "cleitonnalin@hotmail.com", "12345");
 
-zelador.Login(zelador.name, zelador.password);
-zelador.GetInformation();
+List<Usuario> usuarios= new List<Usuario>();
+usuarios.Add(aluno);
+usuarios.Add(zelador);

@@ -7,7 +7,7 @@ namespace C_para_Iniciantesudemy.Objects.Heranças
 {
     public class Aluno : Usuario
     {
-        string turno;
+        public string turno;
 
         public Aluno(string turno, string nome, string email, string password) : base(nome, email, password)
         {
