@@ -39,7 +39,7 @@ namespace C_para_Iniciantesudemy.Objects.Heranças
             Console.WriteLine ("Logando com o pin e email");
         }
 
-        public void GetInformation()
+        public virtual void GetInformation()
         {
             Console.WriteLine($"Name: {name}");
             Console.WriteLine($"Email: {email}");

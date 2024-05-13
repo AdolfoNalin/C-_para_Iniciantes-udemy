@@ -14,5 +14,24 @@ namespace C_para_Iniciantesudemy.Objects.Heranças
         {
             
         }
+
+        public void SetTask(List<string> task)
+        {
+            for(int i = 0; i < task.Count; i++)
+            {
+                this.task.Add(task[i]);
+            }
+        }
+
+        public override void GetInformation()
+        {
+            Console.WriteLine("Dados do Zelador");
+            base.GetInformation();
+
+            for(int i = 0; i < task.Count; i++)
+            {
+                Console.WriteLine(task[i]);
+            }
+        }
     }
 }

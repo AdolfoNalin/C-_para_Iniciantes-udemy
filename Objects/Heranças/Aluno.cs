@@ -17,6 +17,12 @@ namespace C_para_Iniciantesudemy.Objects.Heranças
         public String MudTeste(){
             return teste;
         }
-        
+
+        public override void GetInformation()
+        {
+            Console.WriteLine("Dados do aluno");
+            base.GetInformation();
+            Console.WriteLine("Turno: {0}", turno);
+        }
     }
 }

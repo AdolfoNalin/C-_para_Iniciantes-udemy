@@ -8,3 +8,5 @@ zelador.GetInformation();
 
 aluno.Login("email","aih0ag-a");
 aluno.Login(123,"email");
+
+aluno.GetInformation();
