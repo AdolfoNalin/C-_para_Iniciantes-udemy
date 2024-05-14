@@ -1,12 +1,24 @@
-﻿using C__ParaIniciantes;
-using C_para_Iniciantesudemy.Objects.Heranças;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using C_para_Iniciantesudemy;
 
-Aluno aluno = new Aluno("Noturno", "Adolfo", "adolfonalin@gmail.com", "12345");
+namespace C_para_Iniciantesudemy
+{
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            dynamic idade = 18;
 
-Zelador zelador= new Zelador("Cleiton", "cleitonnalin@hotmail.com", "12345");
-zelador.GetInformation();
-
-aluno.Login("email","aih0ag-a");
-aluno.Login(123,"email");
-
-aluno.GetInformation();
+            if(!(idade < 18))
+            {
+                Console.WriteLine("Está liberado");
+            } 
+            else{
+                Console.WriteLine("Não está liberado");
+            }
+        }
+    }
+}
