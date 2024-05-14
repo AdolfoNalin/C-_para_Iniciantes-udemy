@@ -5,3 +5,5 @@
 *.csproj
 .vscode
 .fake
+*idea
+.vs

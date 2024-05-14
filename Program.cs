@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using C_para_Iniciantesudemy;
+using C_para_Iniciantesudemy.Objects.Formas;
 
 namespace C_para_Iniciantesudemy
 {
@@ -10,15 +11,9 @@ namespace C_para_Iniciantesudemy
     {
         static void Main(string[] args)
         {
-            dynamic idade = 18;
+            Drawble shape = new Line();
 
-            if(!(idade < 18))
-            {
-                Console.WriteLine("Está liberado");
-            } 
-            else{
-                Console.WriteLine("Não está liberado");
-            }
+            shape.Draw();
         }
     }
 }
